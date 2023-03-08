@@ -54,6 +54,7 @@ const redrawSquares = () => {
 <style lang="scss" scoped>
 .grid-container {
   display: grid;
+  padding: 20px;
   grid-gap: 10px;
   grid-template-rows: repeat(64, 36px);
   background-color: #333;
