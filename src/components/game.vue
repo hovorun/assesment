@@ -11,19 +11,19 @@
       label="Please enter size of y axis"
       @input="redrawSquares"
     />
-  </v-card>
 
-  <div
-    class="grid-container"
-    :style="{ gridTemplateColumns: `repeat(${sizeX}, 36px)` }"
-  >
     <div
-      v-for="(square, index) in squares"
-      :key="index"
-      :class="['grid-square', { 'blue': square.isBlue }]"
-      @mouseover="toggleSquareColor(square)"
-    />
-  </div>
+      class="grid-container"
+      :style="{ gridTemplateColumns: `repeat(${sizeX}, 36px)` }"
+    >
+      <div
+        v-for="(square, index) in squares"
+        :key="index"
+        :class="['grid-square', { 'blue': square.isBlue }]"
+        @mouseover="toggleSquareColor(square)"
+      />
+    </div>
+  </v-card>
 </template>
 
 <script setup lang="ts">
