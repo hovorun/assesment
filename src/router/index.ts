@@ -6,17 +6,17 @@ import {
 const routes = [
   {
     path: '/',
-    component: () => import('@/views/Home.vue'),
+    component: () => import('@/views/home.vue'),
     children: [
       {
         path: '',
         name: 'Login',
-        component: () => import(/* webpackChunkName: "login" */ '@/components/login.vue'),
+        component: () => import(/* webpackChunkName: "login" */ '@/views/login.vue'),
       },
       {
         path: '/game',
         name: 'Game',
-        component: () => import(/* webpackChunkName: "game" */ '@/components/game.vue'),
+        component: () => import(/* webpackChunkName: "game" */ '@/views/game.vue'),
       },
     ],
   },

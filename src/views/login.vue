@@ -89,6 +89,7 @@ const { validator } = useValidation(data, validationRules);
 
 const handleSubmit = () => {
   validator.value.$touch();
+
   if (!validator.value.$error) {
     router.push('/game');
   }
